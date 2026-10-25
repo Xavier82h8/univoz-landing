@@ -1,0 +1,16 @@
+:root {
+  --c-ink: #111;
+  --c-text: #3a3a3a;
+  --c-purple: #6a1fb8;
+  --c-pink: #ee5fe0;
+  --c-rose: #fcd9ea;
+  --c-green: #46eb9d;
+  --c-yellow: #faee85;
+  --c-dark: #231d2b;
+  --c-teal: #1fd8c9;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --container: 1200px;
+  --font: 'Rubik', system-ui, sans-serif;
+  --font-display: 'Tilt Warp', var(--font);
+}

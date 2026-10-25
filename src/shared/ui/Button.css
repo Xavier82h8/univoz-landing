@@ -1,0 +1,6 @@
+.btn { display: inline-flex; align-items: center; justify-content: center; font: 500 1.35rem var(--font); padding: 14px 40px; border-radius: 18px; border: 3px solid var(--c-ink); cursor: pointer; transition: transform .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn--solid { background: var(--c-ink); color: #fff; }
+.btn--outline { background: #fff; color: var(--c-ink); }
+.btn--pill { background: var(--c-pink); border-color: var(--c-pink); color: #fff; font-size: .95rem; padding: 8px 22px; border-radius: var(--radius-pill); }
+.btn--primary { background: var(--c-purple); border-color: var(--c-purple); color: #fff; font-size: 1.1rem; padding: 12px 34px; border-radius: 14px; }

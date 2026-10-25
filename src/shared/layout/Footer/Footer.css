@@ -1,0 +1,65 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: var(--c-dark);
+  color: #fff;
+  padding: 120px 0 64px;
+}
+
+.footer__logo-reveal {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer__logo {
+  position: absolute;
+  right: clamp(24px, 5vw, 64px);
+  bottom: 24px;
+  width: 56px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/images/footer-waves.svg') center 48% / cover no-repeat;
+  pointer-events: none;
+}
+
+.footer > .container { position: relative; }
+
+.footer__grid { display: grid; grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr)) minmax(0, 1.3fr); gap: clamp(24px, 3vw, 32px); }
+.footer__grid > * { min-width: 0; }
+.footer h2 { color: #fff; font-size: clamp(1.8rem, 3vw, 2.2rem); }
+.footer h3 { color: #fff; font-size: .9rem; font-weight: 600; margin-bottom: 20px; }
+.footer li { margin-bottom: 14px; font-size: .85rem; color: #f1edf7; overflow-wrap: anywhere; }
+.footer li a { display: inline-block; }
+.footer li a:hover, .footer li a:focus-visible { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.footer__muted { color: #f1edf7; font-size: .85rem; max-width: 240px; margin-top: 12px; }
+.footer__about p:first-of-type { color: #f1edf7; font-size: .85rem; }
+.footer__mail { display: flex; align-items: flex-start; gap: 10px; font-size: .85rem; overflow-wrap: anywhere; }
+.footer__mail svg { flex: 0 0 auto; margin-top: 3px; }
+.footer__loc { padding-left: 28px; }
+
+@media (max-width: 800px) {
+  .footer { padding: 96px 0 48px; }
+  .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 36px; }
+  .footer__about, .footer__contact { grid-column: 1 / -1; }
+}
+
+@media (max-width: 480px) {
+  .footer { padding: 76px 0 36px; }
+  .footer__grid { column-gap: 20px; row-gap: 30px; }
+  .footer h3 { margin-bottom: 14px; }
+  .footer__muted { max-width: none; }
+  .footer__loc { padding-left: 0; }
+}
+
+@media (max-width: 360px) {
+  .footer__grid { grid-template-columns: minmax(0, 1fr); }
+  .footer__about, .footer__contact { grid-column: auto; }
+}

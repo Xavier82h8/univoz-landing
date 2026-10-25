@@ -1,0 +1,1 @@
+Coloca aquí los recursos originales de UNIVOZ cuando estén disponibles (logotipo, mascota, capturas de la app e ilustraciones). Después actualiza las rutas de imagen en los componentes correspondientes.

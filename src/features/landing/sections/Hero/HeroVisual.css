@@ -1,0 +1,31 @@
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 520 / 660;
+  justify-self: center;
+  margin-right: 90px;
+}
+
+.hero-visual__shape {
+  position: absolute;
+  inset: 0 0 0 -8%;
+  background: linear-gradient(180deg, #6db4f2 0%, #a4d9d0 50%, #d9f06c 100%);
+  clip-path: polygon(16% 3%, 100% 26%, 97% 98%, 6% 80%);
+}
+
+
+.hero-visual__phone--back  { left: 10%; top: 8%;  width: 46%; z-index: 1; transform: rotate(-8deg); }
+.hero-visual__phone--front { left: 44%; top: 24%; width: 44%; z-index: 2; transform: rotate(7deg); }
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .hero-visual { width: calc(100% - 48px); margin-right: 48px; }
+}
+
+@media (max-width: 1000px) {
+  .hero-visual { width: min(100%, 420px); margin: 0 auto; }
+}
+
+@media (max-width: 600px) {
+  .hero-visual { width: min(100%, 360px); }
+}
