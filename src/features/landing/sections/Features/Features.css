@@ -28,14 +28,14 @@
   .feature { padding: 20px 12px; border-radius: 20px; }
   .feature__icon { width: 76px; height: 76px; margin-bottom: 14px; }
   .feature__icon img { width: 54px; height: 54px; }
-  .feature h3 { font-size: 1.12rem; }
+  .feature h3 { font-size: 1.2rem; }
 }
 
 @media (max-width: 480px) {
   .features .container { width: min(100% - 40px, var(--container)); }
   .features__grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
   .feature { width: min(100%, 360px); justify-self: center; padding: 22px 18px; }
-  .feature p { max-width: 300px; margin-inline: auto; font-size: .88rem; }
+  .feature p { max-width: 300px; margin-inline: auto; font-size: .98rem; line-height: 1.55; }
 }
 
 @media (prefers-reduced-motion: reduce) {

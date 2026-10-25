@@ -144,6 +144,7 @@
 
 .legal-document__content p {
   margin: 0 0 18px;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -208,5 +209,14 @@
 
   .legal-document__content h2 {
     margin-top: 36px;
+  }
+
+  .legal-document__content p,
+  .legal-document__content li {
+    font-size: 1rem;
+  }
+
+  .legal-sidebar__link {
+    font-size: .92rem;
   }
 }

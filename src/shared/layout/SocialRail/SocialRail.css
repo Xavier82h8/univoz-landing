@@ -117,6 +117,12 @@
   .social-rail__toggle { width: 38px; height: 60px; }
 }
 
+@media (max-width: 600px) {
+  .social-rail {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .social-rail__links,
   .social-rail__toggle,

@@ -52,11 +52,15 @@
 }
 
 @media (max-width: 480px) {
-  .footer { padding: 76px 0 36px; }
+  .footer { padding: 76px 0 88px; }
   .footer__grid { column-gap: 20px; row-gap: 30px; }
-  .footer h3 { margin-bottom: 14px; }
-  .footer__muted { max-width: none; }
+  .footer h3 { margin-bottom: 14px; font-size: 1.05rem; }
+  .footer li { font-size: 1rem; }
+  .footer__muted { max-width: none; font-size: .98rem; line-height: 1.6; }
+  .footer__about p:first-of-type,
+  .footer__mail { font-size: 1rem; }
   .footer__loc { padding-left: 0; }
+  .footer__logo { right: 20px; bottom: 16px; width: 48px; height: 45px; }
 }
 
 @media (max-width: 360px) {
